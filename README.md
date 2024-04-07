@@ -42,7 +42,7 @@ $ python localization.py -h
 
 TODO: this is incomplete, this section was intended to be the mathematical explanation, typeset in TeX
 
-$$ \begin{pmatrix}x'\\y'\\ \theta'\end{pmatrix} = \begin{pmatrix}x\\y\\ \theta\end{pmatrix} + \begin{pmatrix}\delta_{\text{trans}}\cos(\theta+\delta_{\text{rot1}})\\
+$$ \begin{pmatrix} x' \\ y' \\ \theta' \end{pmatrix} = \begin{pmatrix} x \\ y \\ \theta \end{pmatrix} + \begin{pmatrix}\delta_{\text{trans}}\cos(\theta+\delta_{\text{rot1}})\\
 \delta_{\text{trans}}\sin(\theta+\delta_{\text{rot1}}) \\ \delta_{\text{rot1}}+\delta_{\text{rot2}}\end{pmatrix} $$
 
 **Jacobian Matrix G**
