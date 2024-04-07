@@ -70,3 +70,7 @@ $$ = \begin{pmatrix}
 $$ \theta_{\text{bearing}} = \tan^{-1}\left(\frac{M_y-y}{M_x-x}\right)-\theta = \tan^{-1}\left(\frac{\mathrm{d}y}{\mathrm{d}x}\right) - \theta$$
 $$ H = \begin{pmatrix} \frac{\partial\theta_{\text{bearing}}}{\partial x} && \frac{\partial\theta_{\text{bearing}}}{\partial y} && \frac{\partial\theta_{\text{bearing}}}{\partial \theta}\end{pmatrix}$$
 $$ = \begin{pmatrix} \frac{\mathrm{d}y}{\mathrm{d}x^2+\mathrm{d}y^2} && \frac{-\mathrm{d}x}{\mathrm{d}x^2+\mathrm{d}y^2} && -1\end{pmatrix}$$
+
+If the source above couldn't be rendered in your browser, here is a screenshot from my laptop(rendered from the same source as above)
+
+![Mathematical derivation](markdown_extras/latex_render.png)
