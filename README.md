@@ -54,5 +54,16 @@ $$ = \begin{pmatrix}
 0 && 1 && \delta_{\text{trans}}\cos(\theta+\delta_{\text{rot1}}) \\
 0 && 0 && 1
 \end{pmatrix} $$
+$$V =
+\begin{pmatrix}
+\frac{\partial x'}{\partial \delta_{\text{rot1}}} && \frac{\partial x'}{\partial \delta_{\text{trans}}} && \frac{\partial x'}{\partial \delta_{\text{rot2}}} \\
+\frac{\partial y'}{\partial \delta_{\text{rot1}}} && \frac{\partial y'}{\partial \delta_{\text{trans}}} && \frac{\partial y'}{\partial \delta_{\text{rot2}}} \\
+\frac{\partial \theta'}{\partial \delta_{\text{rot1}}} && \frac{\partial \theta'}{\partial \delta_{\text{trans}}} && \frac{\partial \theta'}{\partial \delta_{\text{rot2}}}
+\end{pmatrix}$$
+$$ = \begin{pmatrix}
+-\delta_{\text{trans}}\sin(\theta+\delta_{\text{rot1}}) && \cos(\theta+\delta_{\text{rot1}}) && 0 \\
+\delta_{\text{trans}}\cos(\theta+\delta_{\text{rot1}}) && \sin(\theta+\delta_{\text{rot1}}) && 0 \\
+1 && 0 && 1
+\end{pmatrix} $$
 $$ H = \begin{pmatrix} \frac{\partial\theta_{\text{bearing}}}{\partial x} && \frac{\partial\theta_{\text{bearing}}}{\partial y} && \frac{\partial\theta_{\text{bearing}}}{\partial z}\end{pmatrix}$$
 $$ = \begin{pmatrix} \frac{\mathrm{d}y}{\mathrm{d}x^2+\mathrm{d}y^2} && \frac{-\mathrm{d}x}{\mathrm{d}x^2+\mathrm{d}y^2} && -1\end{pmatrix}$$
