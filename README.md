@@ -44,5 +44,15 @@ TODO: this is incomplete, this section was intended to be the mathematical expla
 
 $$ \begin{pmatrix}x'\\y'\\ \theta'\end{pmatrix} = \begin{pmatrix}x\\y\\ \theta\end{pmatrix} + \begin{pmatrix}\delta_{\text{trans}}\cos(\theta+\delta_{\text{rot1}})\\
 \delta_{\text{trans}}\sin(\theta+\delta_{\text{rot1}}) \\ \delta_{\text{rot1}}+\delta_{\text{rot2}}\end{pmatrix}$$
+$$ G = \begin{pmatrix}
+\frac{\partial x'}{\partial x} && \frac{\partial x'}{\partial y} && \frac{\partial x'}{\partial \theta} \\
+\frac{\partial y'}{\partial x} && \frac{\partial y'}{\partial y} && \frac{\partial y'}{\partial \theta} \\
+\frac{\partial \theta'}{\partial x} && \frac{\partial \theta'}{\partial y} && \frac{\partial \theta'}{\partial \theta} \\
+\end{pmatrix} $$
+$$ = \begin{pmatrix}
+1 && 0 && -\delta_{\text{trans}}\sin(\theta+\delta_{\text{rot1}}) \\
+0 && 1 && \delta_{\text{trans}}\cos(\theta+\delta_{\text{rot1}}) \\
+0 && 0 && 1
+\end{pmatrix} $$
 $$ H = \begin{pmatrix} \frac{\partial\theta_{\text{bearing}}}{\partial x} && \frac{\partial\theta_{\text{bearing}}}{\partial y} && \frac{\partial\theta_{\text{bearing}}}{\partial z}\end{pmatrix}$$
 $$ = \begin{pmatrix} \frac{\mathrm{d}y}{\mathrm{d}x^2+\mathrm{d}y^2} && \frac{-\mathrm{d}x}{\mathrm{d}x^2+\mathrm{d}y^2} && -1\end{pmatrix}$$
