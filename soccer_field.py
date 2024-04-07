@@ -77,6 +77,7 @@ class Field:
         # MY IMPLEMENTATION HERE
         dx = self.MARKER_X_POS[marker_id] - x[0]
         dy = self.MARKER_Y_POS[marker_id] - x[1]
+        dx, dy = float(dx), float(dy)
         ss = dx*dx+dy*dy
         return np.array([dy/ss, -dx/ss, -1], dtype=np.float64).reshape(-1, 1).T
 

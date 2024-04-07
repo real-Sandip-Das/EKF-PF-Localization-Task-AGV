@@ -32,3 +32,12 @@ flags available to you, run
 ```bash
 $ python localization.py -h
 ```
+
+## Explanation of Solution
+
+TODO: this is incomplete, this section was intended to be the mathematical explanation, typeset in TeX
+
+$$ \begin{pmatrix}x'\\y'\\z'\end{pmatrix} = \begin{pmatrix}x\\y\\z\end{pmatrix} + \begin{pmatrix}\delta_{\text{trans}}\sin(\theta+\delta_{\text{rot1}})\\
+\delta_{\text{trans}}\sin(\theta+\delta_{\text{rot1}}) \\\end{pmatrix}$$
+$$ H = \begin{pmatrix} \frac{\partial\theta_{\text{bearing}}}{\partial x} && \frac{\partial\theta_{\text{bearing}}}{\partial y} && \frac{\partial\theta_{\text{bearing}}}{\partial z}\end{pmatrix}$$
+$$ = \begin{pmatrix} \frac{\mathrm{d}y}{\mathrm{d}x^2+\mathrm{d}y^2} && \frac{-\mathrm{d}x}{\mathrm{d}x^2+\mathrm{d}y^2} && -1\end{pmatrix}$$
