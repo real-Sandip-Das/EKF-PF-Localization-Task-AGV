@@ -33,6 +33,11 @@ flags available to you, run
 $ python localization.py -h
 ```
 
+## Screenshots of successful runs
+
+![First Screenshot](markdown_extras/screenshot1.png)
+![Second Screenshot](markdown_extras/screenshot2.png)
+
 ## Explanation of Solution
 
 TODO: this is incomplete, this section was intended to be the mathematical explanation, typeset in TeX
